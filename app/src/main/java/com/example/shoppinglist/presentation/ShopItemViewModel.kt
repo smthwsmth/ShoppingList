@@ -2,6 +2,7 @@ package com.example.shoppinglist.presentation
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
+import androidx.lifecycle.ViewModel
 import com.example.shoppinglist.data.ShopListRepositoryImpl
 import com.example.shoppinglist.domain.AddShopItemUseCase
 import com.example.shoppinglist.domain.EditShopItemUseCase
@@ -9,7 +10,7 @@ import com.example.shoppinglist.domain.GetShopItemUseCase
 import com.example.shoppinglist.domain.ShopItem
 import kotlin.time.Duration.Companion.milliseconds
 
-class ShopItemViewModel {
+class ShopItemViewModel: ViewModel() {
 
     private val repository = ShopListRepositoryImpl
     private val getShopItemUseCase = GetShopItemUseCase(repository)
