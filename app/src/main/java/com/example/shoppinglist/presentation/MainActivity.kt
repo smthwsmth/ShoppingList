@@ -30,6 +30,7 @@ class MainActivity : AppCompatActivity() {
     }
 
 
+
     private fun setupRecyclerView() {
         val rvShopList = findViewById<RecyclerView>(R.id.rv_shop_list)
         with(rvShopList) {
